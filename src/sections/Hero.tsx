@@ -27,10 +27,10 @@ export function Hero() {
             <div className="flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary-soft px-3 py-1 font-mono text-label uppercase text-primary-strong">
                 <Users className="size-3" aria-hidden="true" />
-                Tugas kelompok
+                Kelompok 4
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-raised px-3 py-1 font-mono text-label uppercase text-ink-soft">
-                Kelas X · IPA
+                Kelas XI RPL 2
               </span>
             </div>
 
@@ -41,8 +41,9 @@ export function Hero() {
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
-              Fermentasi anaerobik 90 hari dari limbah dapur. Tiga bahan, satu
-              galon, dan cara pakai yang bisa diulang.
+              Fermentasi kedap udara (tanpa&nbsp;oksigen) selama 90 hari dari
+              limbah dapur. Tiga bahan, satu galon, dan cara pakai yang bisa
+              diulang.
             </p>
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
@@ -51,23 +52,17 @@ export function Hero() {
               hasilnya dipakai sebagai pembersih, pupuk cair, dan pengurai organik.
             </p>
 
-            <dl className="mt-9 grid max-w-2xl grid-cols-3 divide-x divide-line border-y border-line">
-              <div className="py-4 pr-3 sm:pr-5">
+            <dl className="mt-9 grid max-w-lg grid-cols-2 divide-x divide-line border-y border-line">
+              <div className="py-4 pr-4 sm:pr-6">
                 <dt className="font-mono text-label uppercase text-ink-soft">Durasi</dt>
                 <dd className="mt-1 font-serif text-xl leading-none tracking-tight text-ink sm:text-2xl">
                   90 hari
                 </dd>
               </div>
-              <div className="px-3 py-4 sm:px-5">
+              <div className="py-4 pl-4 sm:pl-6">
                 <dt className="font-mono text-label uppercase text-ink-soft">Rasio</dt>
                 <dd className="mt-1 font-serif text-xl leading-none tracking-tight text-ink sm:text-2xl">
                   1 : 3 : 10
-                </dd>
-              </div>
-              <div className="py-4 pl-3 sm:pl-5">
-                <dt className="font-mono text-label uppercase text-ink-soft">Ampas</dt>
-                <dd className="mt-1 font-serif text-xl leading-none tracking-tight text-ink sm:text-2xl">
-                  Dikompos
                 </dd>
               </div>
             </dl>
@@ -86,7 +81,7 @@ export function Hero() {
                   Spesimen 001
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-soft px-2 py-1 font-mono text-label uppercase text-primary-strong">
-                  Anaerobik
+                  Kedap udara
                 </span>
               </div>
 

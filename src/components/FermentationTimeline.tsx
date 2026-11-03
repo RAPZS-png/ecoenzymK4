@@ -28,7 +28,7 @@ export function FermentationTimeline() {
               )}
             >
               <div className="flex items-center justify-between gap-3">
-                <span className="font-mono text-label uppercase text-primary-soft">
+                <span className="font-mono text-label uppercase text-[var(--deep-highlight)]">
                   {phase.period}
                 </span>
                 <span className="flex size-8 shrink-0 items-center justify-center rounded-full border border-on-deep/20 text-on-deep-muted">
@@ -48,22 +48,9 @@ export function FermentationTimeline() {
         })}
       </ol>
 
-      <div className="mt-9 border-t border-on-deep/15 pt-5">
-        <div className="flex items-center justify-between font-mono text-label uppercase text-on-deep-muted">
-          <span>Hari 0</span>
-          <span>Panen hari 90</span>
-        </div>
-        <div
-          className="mt-2 h-1 overflow-hidden rounded-full bg-on-deep/15"
-          aria-hidden="true"
-        >
-          <div className="h-full w-full bg-linear-to-r from-primary-soft/70 via-primary-soft/40 to-primary-soft/20" />
-        </div>
-      </div>
-
-      <div className="mt-6 flex gap-3 rounded-xl border border-on-deep/15 bg-on-deep/5 p-4">
+      <div className="mt-8 flex gap-3 rounded-xl border border-on-deep/15 bg-on-deep/5 p-4">
         <TriangleAlert
-          className="mt-0.5 size-4 shrink-0 text-primary-soft"
+          className="mt-0.5 size-4 shrink-0 text-[var(--deep-highlight)]"
           aria-hidden="true"
         />
         <p className="text-xs leading-relaxed text-on-deep-muted">

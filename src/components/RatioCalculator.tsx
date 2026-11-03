@@ -104,9 +104,14 @@ export function RatioCalculator() {
                 <Candy className="size-4 text-accent" aria-hidden="true" />
                 Gula merah
               </dt>
-              <dd className="flex items-baseline gap-1.5 font-serif text-2xl tabular-nums text-ink">
-                {formatDecimal(sugar)}
-                <span className="font-sans text-xs font-normal text-ink-soft">g</span>
+              <dd className="text-right">
+                <span className="flex items-baseline justify-end gap-1.5 font-serif text-2xl tabular-nums text-ink">
+                  {formatDecimal(sugar)}
+                  <span className="font-sans text-xs font-normal text-ink-soft">g</span>
+                </span>
+                <span className="mt-1 block font-mono text-label text-ink-soft">
+                  (± {formatInteger(sugar)} gr)
+                </span>
               </dd>
             </div>
 
@@ -115,9 +120,14 @@ export function RatioCalculator() {
                 <Droplets className="size-4 text-primary" aria-hidden="true" />
                 Air bersih
               </dt>
-              <dd className="flex items-baseline gap-1.5 font-serif text-2xl tabular-nums text-ink">
-                {formatDecimal(water)}
-                <span className="font-sans text-xs font-normal text-ink-soft">ml</span>
+              <dd className="text-right">
+                <span className="flex items-baseline justify-end gap-1.5 font-serif text-2xl tabular-nums text-ink">
+                  {formatDecimal(water)}
+                  <span className="font-sans text-xs font-normal text-ink-soft">ml</span>
+                </span>
+                <span className="mt-1 block font-mono text-label text-ink-soft">
+                  (± {formatInteger(water)} ml)
+                </span>
               </dd>
             </div>
           </dl>

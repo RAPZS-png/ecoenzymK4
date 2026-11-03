@@ -1,5 +1,4 @@
 import { motion, useReducedMotion } from 'motion/react'
-import { Timer } from 'lucide-react'
 import type { Step } from '../data/praktikum'
 import { revealUp, viewportOnce } from '../lib/motion-tokens'
 import { AssetImage } from './AssetImage'
@@ -45,11 +44,6 @@ export function StepCard({ step }: StepCardProps) {
           </h3>
 
           <p className="mt-3 text-sm leading-relaxed text-ink-soft">{step.note}</p>
-
-          <div className="mt-5 flex items-center gap-2 border-t border-line pt-4 font-mono text-label uppercase text-ink-soft">
-            <Timer className="size-3.5 shrink-0 text-primary" aria-hidden="true" />
-            <span>{step.meta}</span>
-          </div>
         </div>
       </article>
     </motion.li>

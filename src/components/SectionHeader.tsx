@@ -23,7 +23,7 @@ export function SectionHeader({
         <span
           className={cn(
             'font-mono text-label uppercase',
-            dark ? 'text-primary-soft' : 'text-primary',
+            dark ? 'text-[var(--deep-highlight)]' : 'text-primary',
           )}
         >
           {index}

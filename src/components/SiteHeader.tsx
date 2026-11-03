@@ -32,7 +32,7 @@ export function SiteHeader() {
 
         <div className="flex shrink-0 items-center gap-3 sm:gap-4">
           <span className="hidden items-center gap-2 font-mono text-label uppercase text-ink-soft md:flex">
-            Fermentasi anaerobik
+            Fermentasi kedap udara
           </span>
           <span className="hidden h-4 w-px bg-line md:block" aria-hidden="true" />
           <span className="font-mono text-xs tracking-wide text-ink">1 : 3 : 10</span>

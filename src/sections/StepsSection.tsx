@@ -10,8 +10,8 @@ export function StepsSection() {
         <SectionHeader
           index="03"
           eyebrow="Prosedur"
-          title="Delapan langkah, satu galon."
-          description="Kerjakan berurutan dan jaga semua alat tetap kering. Waktu dan alat yang dibutuhkan tercatat di setiap langkah."
+          title="Sembilan langkah, satu galon."
+          description="Kerjakan berurutan dan jaga semua alat tetap kering. Setiap langkah mencatat hal yang perlu diperhatikan."
         />
       </Reveal>
 
