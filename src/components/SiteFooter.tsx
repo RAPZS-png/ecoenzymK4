@@ -8,15 +8,14 @@ export function SiteFooter() {
           <div className="max-w-md">
             <p className="flex items-center gap-2 font-mono text-label uppercase text-primary">
               <Leaf className="size-3.5" aria-hidden="true" />
-              Catatan praktikum sekolah
+              Catatan tugas sekolah
             </p>
             <p className="mt-3 font-serif text-2xl leading-tight text-ink">
-              Dari limbah dapur, kembali ke tanah.
+              Satu galon, satu pelajaran.
             </p>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-              Dokumentasi ini dibuat untuk tugas kelompok praktikum IPA. Ampas
-              fermentasi dikomposkan, wadah dipakai ulang, dan tidak ada bahan yang
-              dibuang percuma.
+              Dokumentasi ini dibuat untuk tugas kelompok praktikum kokurikuler.
+              Tidak ada bahan yang dibuang percuma.
             </p>
           </div>
 

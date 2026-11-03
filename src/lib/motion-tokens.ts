@@ -10,9 +10,17 @@ export const ease = {
 export const duration = {
   quick: 0.16,
   base: 0.32,
+  considered: 0.45,
   slow: 0.6,
   slowest: 0.9,
 } satisfies Record<string, number>
+
+/** Delay between animated units in a text reveal. */
+export const textStagger = {
+  word: 0.045,
+  character: 0.02,
+  line: 0.09,
+} satisfies Record<'word' | 'character' | 'line', number>
 
 /** Springs for elements that need a little weight. */
 export const spring = {

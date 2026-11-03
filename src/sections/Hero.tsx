@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'motion/react'
 import { FlaskConical, Users } from 'lucide-react'
 import { duration, ease } from '../lib/motion-tokens'
+import { TextReveal } from '../components/TextReveal'
 
 const ratios = [
   { label: 'Gula merah', value: '1 bagian', color: 'bg-accent' },
@@ -23,7 +24,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 sm:pb-16 sm:pt-14 lg:px-8 lg:pb-20 lg:pt-16">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,0.8fr)] lg:items-end lg:gap-12">
-          <motion.div initial={initial} animate={animate} transition={transition}>
+          <div>
             <div className="flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary-soft px-3 py-1 font-mono text-label uppercase text-primary-strong">
                 <Users className="size-3" aria-hidden="true" />
@@ -34,22 +35,35 @@ export function Hero() {
               </span>
             </div>
 
-            <h1 className="mt-6 max-w-3xl font-serif text-hero text-ink">
-              Dokumentasi Praktikum:{' '}
-              <span className="whitespace-nowrap italic text-primary">Eco-Enzyme</span>{' '}
-              Ramah Lingkungan
+            <h1
+              aria-label="Praktikum: Eco-Enzyme Ramah Lingkungan"
+              className="mt-6 max-w-3xl font-serif text-hero text-ink"
+            >
+              <TextReveal by="word" startIndex={0}>
+                Praktikum:
+              </TextReveal>{' '}
+              <TextReveal
+                by="word"
+                startIndex={1}
+                className="whitespace-nowrap italic text-primary"
+              >
+                Eco-Enzyme
+              </TextReveal>{' '}
+              <TextReveal by="word" startIndex={2}>
+                Ramah Lingkungan
+              </TextReveal>
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">
               Fermentasi kedap udara (tanpa&nbsp;oksigen) selama 90 hari dari
-              limbah dapur. Tiga bahan, satu galon, dan cara pakai yang bisa
-              diulang.
+              limbah dapur. Tiga bahan, satu galon.
             </p>
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-ink-soft sm:text-base">
               Eco-enzyme adalah cairan hasil fermentasi limbah organik dapur, gula
               merah, dan air dengan perbandingan 1 : 3 : 10. Setelah 90 hari,
-              hasilnya dipakai sebagai pembersih, pupuk cair, dan pengurai organik.
+              hasilnya dapat dipakai sebagai pembersih, pupuk cair, dan pengurai
+              organik.
             </p>
 
             <dl className="mt-9 grid max-w-lg grid-cols-2 divide-x divide-line border-y border-line">
@@ -66,7 +80,7 @@ export function Hero() {
                 </dd>
               </div>
             </dl>
-          </motion.div>
+          </div>
 
           <motion.aside
             initial={initial}
